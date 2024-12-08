@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BytePwn</title>
+    <link rel="stylesheet" href="SpiderProbe.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <div class="container" id="main-container">
+        <!--
+        <div class="header">
+            <h1><span class="byte">Byte</span><span class="net">Pwn</span></h1>
+        </div>
+        -->
+
+        <div class="nav">
+            <!-- Anchor only around the back button part -->
+            <a href="../Home.html" id="back-button"><strong>..</strong></a> 
+            <span class="nav-button"> / Spidering</span> <!-- Regular text -->
+        </div>
+
+        <div class="content">
+            <div class="text">
+                <p>
+                    Spidering (also known as "crawling") is the process of systematically navigating through a website or network to discover 
+                    its resources, links, and content structure. This method involves following links and recording the accessible pages, 
+                    directories, and files. Spidering is similar to how search engines like Google index websites, but in cybersecurity, spidering 
+                    is often used to gather information about a target for security assessments or penetration testing.
+                </p>
+
+                <form id="spider-form" method="POST">
+                    <label for="weburl" style="margin-right: 10px;"><strong>Enter Website URL: </strong> </label>
+                    <input type="text" id="weburl" name="url" size="35" placeholder="https://www.example.com/" required>
+
+                    <label for="weburlkey" style="margin-right: 10px;"><strong>Enter Keyword: </strong> </label>
+                    <input type="text" id="weburlkey" name="urlkey" size="20" placeholder="keyword" required>
+                    <button type="submit" >Run</button>
+                </form>
+
+                <textarea id="terminal" rows="25" readonly></textarea>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="SpiderProbe.js"></script>
+
+</body>
+</html>

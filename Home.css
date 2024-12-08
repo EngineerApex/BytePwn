@@ -1,0 +1,153 @@
+::selection {
+    background-color: #00ff00; /* Green background for selected text */
+    color: #000;               /* Optional: change text color to black */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0e0d0d;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.byte {
+    color: #AAAAAA;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 8px;
+    font-weight: 1490;
+}
+
+.net {
+    color: #00ff00;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 8px;
+    font-weight: 1490;
+}
+
+.etc {
+    color: #00ff00;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 8px;
+    font-weight: 1490;
+}
+
+
+/* Navigation --------------------------- */
+.nav {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.nav-button {
+    background-color: #0B1A06;  
+    color: #00ff00;
+    padding: 8px 16px;
+    margin: 3px;  /*margin: 3px;*/
+    border: 1px solid #0B1A06; 
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Ubuntu Mono', 'monospace';  
+    border-radius: 5px;  
+    
+}
+
+.nav-button:hover {
+    background-color: #010f01;
+}
+
+/* Main text ------------------------------ */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 22px;
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    width: 60%;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1.5px;
+    color: #c7c7c7;
+    transition: none; /* Ensure no shifting occurs */
+}
+
+
+
+/* Image icon begins here ------------------------------- */
+.icon {
+    margin-top: 25px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    /* for js script */
+    position: relative;
+
+}
+
+.icon img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.spider-icon {
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+.web-icon {
+     margin-top: 300px;  /* Keep web icon below spider icon */
+    
+}
+
+.move-down {
+    transform: translateY(300px); /* Move down by 60px to overlap */
+}
+
+
+/* -- Other device resolution --*/
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .icon {
+        margin-top: 20px;
+    }
+
+    .web-icon {
+        margin-top: 40px; /* Keep web icon below spider icon */
+    }
+
+    .move-down {
+        transform: translateY(50px); /* Move down by 60px to overlap */
+    }
+}
+
+

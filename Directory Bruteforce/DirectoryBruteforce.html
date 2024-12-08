@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BytePwn</title>
+    <link rel="stylesheet" href="DirectoryBruteforce.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <div class="container" id="main-container">
+        <!--
+        <div class="header">
+            <h1><span class="byte">Byte</span><span class="net">Pwn</span></h1>
+        </div>
+        -->
+
+        <div class="nav">
+            <!-- Anchor only around the back button part -->
+            <a href="../Home.html" id="back-button"><strong>..</strong></a> 
+            <span class="nav-button"> / Directory Bruteforce</span> <!-- Regular text -->
+        </div>
+
+        <div class="content">
+            <div class="text">
+                <p>
+                    Directory bruteforcing is a technique in cybersecurity used to discover hidden or restricted directories, files, 
+                    and other resources on a web server. It involves systematically guessing the names of directories and files by 
+                    sending requests to a server and observing the responses. This can reveal paths that are not linked or visible on 
+                    the main site, potentially exposing sensitive information or misconfigured areas.
+                </p>
+
+                <form id="db-form" method="POST">
+                    <label for="weburl" style="margin-right: 10px;"><strong>Enter Website URL: </strong> </label>
+                    <input type="text" id="weburl" name="url" size="50" placeholder="https://www.example.com" required>
+                    <button type="submit" >Run</button>
+                </form>
+
+                <textarea id="terminal" rows="25" readonly></textarea>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="DirectoryBruteforce.js"></script>
+
+</body>
+</html>

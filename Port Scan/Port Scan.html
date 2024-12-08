@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BytePwn</title>
+    <link rel="stylesheet" href="Port Scan.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <div class="container" id="main-container">
+        <!--
+        <div class="header">
+            <h1><span class="byte">Byte</span><span class="net">Pwn</span></h1>
+        </div>
+        -->
+        <div class="nav">
+            <!-- Anchor only around the back button part -->
+            <a href="../Home.html" id="back-button"><strong>..</strong></a> 
+            <span class="nav-button"> / Port Scan</span> <!-- Regular text -->
+        </div>
+
+        <div class="content">
+            <div class="text">
+                <p>
+                    Port scanning is a technique used to identify open ports and services running on a target system. 
+                    It is often performed during the reconnaissance phase of a penetration test or security assessment to gather information about 
+                    network infrastructure, potential vulnerabilities, and exposed services.
+                </p>
+
+                <form id="port-scan-form" method="POST">
+                    <label for="ip-address" style="margin-right: 10px;"><strong>Target IP address: </strong> </label>
+                    <input type="text" id="ip-address" name="ip" placeholder="192.168.1.10" required>
+                    <button type="submit" >Run</button>
+                </form>
+
+                <textarea id="terminal" rows="25" readonly></textarea>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="Port Scan.js"></script>
+
+</body>
+</html>

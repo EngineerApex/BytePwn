@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BytePwn</title>
+    <link rel="stylesheet" href="SubdomainBruteforce.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <div class="container" id="main-container">
+        <!--
+        <div class="header">
+            <h1><span class="byte">Byte</span><span class="net">Pwn</span></h1>
+        </div>
+        -->
+
+        <div class="nav">
+            <!-- Anchor only around the back button part -->
+            <a href="../Home.html" id="back-button"><strong>..</strong></a> 
+            <span class="nav-button"> / Subdomain Bruteforce</span> <!-- Regular text -->
+        </div>
+
+        <div class="content">
+            <div class="text">
+                <p>
+                    Subdomain bruteforcing is a technique used in cybersecurity to discover hidden or lesser-known subdomains associated with 
+                    a main domain. Subdomains can sometimes host applications, services, or servers that contain sensitive information or 
+                    potential vulnerabilities. By enumerating subdomains, security testers can gain a more complete understanding of the assets 
+                    associated with an organization’s domain and identify potential entry points for attacks.
+                </p>
+
+                <form id="sb-form" method="POST">
+                    <label for="weburl" style="margin-right: 10px;"><strong>Enter Website URL: </strong> </label>
+                    <input type="text" id="weburl" name="url" size="50" placeholder="example.com (dont include https://)" required>
+                    <button type="submit" >Run</button>
+                </form>
+
+                <textarea id="terminal" rows="25" readonly></textarea>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="SubdomainBruteforce.js"></script>
+
+</body>
+</html>

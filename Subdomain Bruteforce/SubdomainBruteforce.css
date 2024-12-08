@@ -1,0 +1,204 @@
+::selection {
+    background-color: #00ff00; /* Green background for selected text */
+    color: #000;               /* Optional: change text color to black */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0e0d0d;
+    color: #ffffff;
+}
+
+.container {
+    
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.byte {
+    color: #AAAAAA;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 8px;
+    font-weight: 1490;
+}
+
+.net {
+    color: #00ff00;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 8px;
+    font-weight: 1490;
+}
+
+.etc {
+    color: #00ff00;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 8px;
+    font-weight: 1490;
+}
+
+
+/* Navigation --------------------------- */
+.nav {
+    
+    text-align: left; 
+    margin-top: 35px;
+    /*width: 80%;*/
+    justify-content: center;
+    /*display: flex;*/
+    align-items: center; 
+    /*margin-right: 20px; */
+    
+}
+
+.nav-button {
+    /*background-color: #0B1A06;*/  
+    /*border: 1px solid #0B1A06;*/
+    /*border-radius: 5px;*/ 
+    color: #00ff00;
+    /*padding: 8px 16px;*/
+    margin: 3px;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: 'Ubuntu Mono', 'monospace';  
+}
+
+#back-button {
+    /*border-radius: 5px;
+    background-color: #0B1A06;
+    padding: 8px 16px;*/
+    color: #686868; /* Set the desired color */
+    font-size: 25px;
+    font-family: 'Ubuntu Mono', 'monospace';
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 2px; /* Thicker underline */
+    text-decoration-color: #686868; /* Color for the underline, optional */
+}
+
+#back-button:hover {
+    color: #ff0000; /* Change color on hover, optional */
+    text-decoration-color: #ff0000; /* Change underline color on hover */
+}
+
+/*
+.nav-button:hover {
+    background-color: #010f01;
+}*/
+
+/* Main text ------------------------------ */
+.content {
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 22px;
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    width: auto;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 1.5px;
+    color: #c7c7c7;
+    /*transition: none;  Ensure no shifting occurs */
+}
+
+
+/* Form CSS ---------------------------------------------- */
+/* Styles for the form input and button alignment */
+
+#sb-form {
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+    /*background-color: #929292;
+    border-radius: 10px;
+    border: 2px solid #00ff00;
+    justify-content: center;*/
+}
+
+#sb-form label {
+    font-size: 16px;
+    font-family: monospace;
+    
+    color: #FFD900;
+}
+
+#sb-form input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    font-family: monospace;
+    background-color: transparent;
+    border: none;   /*Remove the border */
+    outline: none;  /*Remove the focus outline*/ 
+    /*border-radius: 12px;*/
+    text-align: left;
+    color:#646464;
+}
+
+#sb-form button {
+    padding: 6px 12px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #d6d6d6;
+    border: none;
+    cursor: pointer;
+    font-family: monospace;
+    outline: none;
+    /*border-radius: 12px;*/
+}
+
+#sb-form button:hover {
+    
+    color: #FFD900;
+}
+
+#terminal {
+    margin-top: 20px;
+    width: 98.2%;          /* Make it responsive */
+    padding: 10px;       /* Add some padding */
+    font-size: 16px;     /* Match font size */
+    font-family: 'Courier New', Courier, monospace; /* Use monospace for terminal-like appearance */
+    border: none;        /* Remove the border */
+    background-color: #000000; /* Background color to match terminal */
+    color: #00ff00;      /* Text color */
+    resize: vertical;        /* Disable resizing */
+    min-height: 100px;
+    overflow-y: auto;    /* Enable vertical scrolling if content overflows */
+    border-radius: 5px;
+    border: 2px solid #b4b4b4;
+}
+
+
+
+
+
+/* -- Other device resolution --*/
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BytePwn</title>
+    <link rel="stylesheet" href="WebScrape.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <div class="container" id="main-container">
+        <!--
+        <div class="header">
+            <h1><span class="byte">Byte</span><span class="net">Pwn</span></h1>
+        </div>
+        -->
+
+        <div class="nav">
+            <!-- Anchor only around the back button part -->
+            <a href="../Home.html" id="back-button"><strong>..</strong></a> 
+            <span class="nav-button"> / Web Scrape</span> <!-- Regular text -->
+        </div>
+
+        <div class="content">
+            <div class="text">
+                <p>
+                    Web Scraping involves systematically extracting data from websites, often as part of reconnaissance and 
+                    information gathering during penetration testing or security assessments. 
+                </p>
+                <p>
+                    Different types of tags that can be input a, main, body, form etc. Do not include '<' and '>' symbol in the input.
+                </p>
+
+                <form id="webs-form" method="POST">
+                    <label for="weburl" style="margin-right: 10px;"><strong>Enter Website URL: </strong> </label>
+                    <input type="text" id="weburl" name="url" size="35" placeholder="https://www.example.com/" required>
+
+                    <label for="weburlkey" style="margin-right: 10px;"><strong>Enter Keyword: </strong> </label>
+                    <input type="text" id="weburlkey" name="urlkey" size="20" placeholder="tags - a, main, body etc" required>
+                    <button type="submit" >Run</button>
+                </form>
+
+                <textarea id="terminal" rows="25" readonly></textarea>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="WebScrape.js"></script>
+
+</body>
+</html>
